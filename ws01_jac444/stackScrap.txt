@@ -1,0 +1,29 @@
+// Name:  Tracy Nguyen
+// Student ID: 127270171
+// Email:  tnguyen157@myseneca.ca
+// Date of completion: Jan 2019
+//
+// I confirm that the content of this file ifs created by me,
+// with exception of the parts provided to me by my professor
+
+public class Stack {
+    private int popCounter;
+    private String str;
+
+    Stack(String str){
+        this.str = str;
+        popCounter = str.length() - 1;
+    }
+
+public char pop(){
+    return str.charAt(popCounter--);
+    }
+
+    public String getString(){
+        return str;
+    }
+
+    public int getLength() {
+        return str.length();
+    }
+}
